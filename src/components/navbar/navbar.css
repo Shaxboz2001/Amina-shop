@@ -1,0 +1,44 @@
+.header-li {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+}
+
+img {
+    width: 100px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 50%;
+}
+form {
+    gap: 1rem;
+    width: 60%;
+}
+form input {
+    width: 50% !important;
+}
+form button {
+    width: 200px;
+}
+a {
+    position: relative;
+}
+a::after{
+    content: "";
+    width: 0;
+    background-color: #000;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: width .32s linear;
+    border-radius: 5px;
+}
+
+a:hover::after {
+    width: 100%;
+}
